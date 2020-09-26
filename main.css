@@ -4,19 +4,15 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #b9b1c2;
 }
-
 header {
     display: flex;
     justify-content: initial;
@@ -26,27 +22,22 @@ header {
     top: 0;
     z-index: 2;
 }
-
 .menu {
     display: flex;
     list-style: none;
     height: 40px;
     padding-inline-start: 40px;
 }
-
 .menu li {
     margin: 10px;
 }
-
 .menu img {
     transition: 0.3s
 }
-
 .menu img:hover {
     transform: scale(1.4);
     transition: 0.3s;
 }
-
 .waves-divider {
     position: absolute;
     bottom: 0;
@@ -56,25 +47,15 @@ header {
     line-height: 0;
     transform: rotate(180deg);
 }
-
 .waves-divider svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
 }
-
 .waves-divider .shape-fill {
     fill: #6A4091;
 }
-
-/* main {
-    position: absolute;
-    justify-content: center;
-    display: block;
-    margin: 0 auto;
-} */
-
 .apresentacao {
     display: flex;
     margin: 0 auto;
@@ -82,34 +63,30 @@ header {
     height: 100vh;
     justify-content: center;
     padding: 0px 150px;
+    background-color: #b9b1c2;
 }
-
 .portifolio {
     display: flex;
     margin: 0 auto;
     background-color: rgb(106, 64, 145);
     align-items: center;
-    height: 100vh;
+    padding: 60px 15px 80px 15px;
     justify-content: center;
 }
-
 .foto {
     width: 180px;
     border-radius: 50%;
     margin: 20px 30px;
 }
-
 .saudacao {
     font-size: 1.5em;
 }
-
 .seta {
     width: 60px;
     height: 82px;
     position: absolute;
     right: 150px;
 }
-
 .seta path {
     stroke: white;
     fill: transparent;
@@ -117,7 +94,6 @@ header {
     animation: seta 2s infinite;
     -webkit-animation: seta 2s infinite;
 }
-
 @keyframes seta {
     0% {
         opacity: 0
@@ -135,7 +111,6 @@ header {
         opacity: 0
     }
 }
-
 @-webkit-keyframes seta {
     0% {
         opacity: 0
@@ -153,26 +128,21 @@ header {
         opacity: 0
     }
 }
-
 .seta path.a1 {
     animation-delay: -1s;
     -webkit-animation-delay: -1s;
 }
-
 .seta path.a2 {
     animation-delay: -.5s;
     -webkit-animation-delay: -.5s;
 }
-
 .projetos>h1 {
     text-align: center;
 }
-
 .cards {
     display: flex;
     flex-wrap: wrap;
 }
-
 .cards div {
     align-self: center;
     min-width: 300px;
@@ -185,7 +155,6 @@ header {
     box-shadow: 10px 10px 2px rgb(140, 85, 190);
     transition: 0.3s;
 }
-
 .cards div:hover {
     transform: scale(1.1);
     transition: 0.3s;
@@ -222,15 +191,9 @@ header {
         text-align: center;
         right: 10%;
     }
-
-    .portifolio {
-        height: 100vh;
-    }
-
     .cards {
         justify-content: center;
     }
-
     .cards div {
         min-width: 200px;
         min-height: 200px;
@@ -238,35 +201,43 @@ header {
         max-height: 200px;
     }
 }
-
 @media (max-width: 440px) {
     .waves-divider svg {
         height: 100px;
         margin-bottom: -10px;
     }
-
     .saudacao {
         padding: 0px 20px 170px 30px;
         font-size: 1.2em;
     }
-
     .portifolio {
         padding-top: 20px;
     }
-
     .cards div {
         min-width: 200px;
         min-height: 150px;
         max-width: 200px;
         max-height: 150px;
     }
-
 }
-
 .cards button {
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     color: white;
     background-color: black;
+}
+ footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    color: gray;
+    height: 40px;
+}
+small{
+    font-size: 10px;
 }
