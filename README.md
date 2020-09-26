@@ -1,2 +1,2 @@
-# Ariane Leite | Portifólio
-&#8987; Em produção.
+# &#8987; Em produção | Portifólio
+ 
