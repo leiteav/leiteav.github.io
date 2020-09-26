@@ -1,9 +1,12 @@
 /* rgb(106, 64, 145) */
 /* #b9b1c2 */
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
     scroll-behavior: smooth;
 }
-
 body {
     width           : 100%;
     margin          : 0;
@@ -11,24 +14,30 @@ body {
     font-family     : Arial, Helvetica, sans-serif;
     background-color: #b9b1c2;
 }
-
 header {
+    display: flex;
+    justify-content: initial;
     background-color: rgb(106, 64, 145);
     position        : fixed;
     width           : 100%;
     top             : 0;
+    z-index         : 2;
 }
-
-.sociais {
-    display   : flex;
+.menu{
+    display: flex;
     list-style: none;
-    color     : white;
+    height: 40px;
+    padding-inline-start: 40px;
 }
-
-.sociais li {
-    text-decoration: none;
-    font-size      : 8px;
-    margin         : 2px 10px;
+.menu li{
+    margin: 10px;
+}
+.menu img{
+    transition: 0.3s
+}
+.menu img:hover{
+    transform : scale(1.4);
+    transition: 0.3s;
 }
 
 .waves-divider {
@@ -78,7 +87,7 @@ main {
 }
 
 .foto {
-    width        : 220px;
+    width        : 180px;
     border-radius: 50%;
     margin       : 20px 30px;
 }
@@ -176,20 +185,28 @@ main {
 }
 
 @media (max-width: 960px) {
+    header{
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .menu{
+        padding-inline-start: 0;
+    }
     .foto {
-        margin-top: 60px;
+        margin-top: 80px;
         width     : 180px;
     }
 
     .apresentacao {
-        padding  : 0px 20px;
         flex-wrap: wrap;
+        padding  : 0px 10px;
     }
 
     .saudacao {
         display  : flex;
         flex-wrap: wrap;
         padding  : 20px 20px 190px 30px;
+
     }
 
     .seta {
@@ -198,7 +215,7 @@ main {
     }
 
     .portifolio {
-        height: 120vh;
+        height: 110vh;
     }
 
     .cards {
@@ -210,6 +227,23 @@ main {
         min-height: 200px;
         max-width : 200px;
         max-height: 200px;
+    }
+}
+
+@media (max-width: 350px) {
+    .waves-divider svg {
+        height: 100px;
+        margin-bottom: -10px;
+    }
+    .saudacao {
+        padding  : 0px 20px 170px 30px;
+        font-size: 1.2em;
+    }
+    .cards div {
+        min-width : 200px;
+        min-height: 150px;
+        max-width : 200px;
+        max-height: 150px;
     }
 }
 
