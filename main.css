@@ -4,92 +4,99 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    width           : 100%;
-    margin          : 0;
-    padding         : 0;
-    font-family     : Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #b9b1c2;
 }
+
 header {
     display: flex;
     justify-content: initial;
     background-color: rgb(106, 64, 145);
-    position        : fixed;
-    width           : 100%;
-    top             : 0;
-    z-index         : 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
 }
-.menu{
+
+.menu {
     display: flex;
     list-style: none;
     height: 40px;
     padding-inline-start: 40px;
 }
-.menu li{
+
+.menu li {
     margin: 10px;
 }
-.menu img{
+
+.menu img {
     transition: 0.3s
 }
-.menu img:hover{
-    transform : scale(1.4);
+
+.menu img:hover {
+    transform: scale(1.4);
     transition: 0.3s;
 }
 
 .waves-divider {
-    position   : absolute;
-    bottom     : 0;
-    left       : 0;
-    width      : 100%;
-    overflow   : hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
     line-height: 0;
-    transform  : rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .waves-divider svg {
     position: relative;
-    display : block;
-    width   : calc(100% + 1.3px);
-    height  : 150px;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
 }
 
 .waves-divider .shape-fill {
     fill: #6A4091;
 }
 
-main {
-    position       : absolute;
+/* main {
+    position: absolute;
     justify-content: center;
-    display        : block;
-    margin         : 0 auto;
-}
+    display: block;
+    margin: 0 auto;
+} */
 
 .apresentacao {
-    display        : flex;
-    margin         : 0 auto;
-    align-items    : center;
-    height         : 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 100vh;
     justify-content: center;
-    padding        : 0px 150px;
+    padding: 0px 150px;
 }
 
 .portifolio {
-    display         : flex;
-    margin          : 0 auto;
+    display: flex;
+    margin: 0 auto;
     background-color: rgb(106, 64, 145);
-    align-items     : center;
-    height          : 100vh;
-    justify-content : center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
 .foto {
-    width        : 180px;
+    width: 180px;
     border-radius: 50%;
-    margin       : 20px 30px;
+    margin: 20px 30px;
 }
 
 .saudacao {
@@ -97,17 +104,17 @@ main {
 }
 
 .seta {
-    width   : 60px;
-    height  : 82px;
+    width: 60px;
+    height: 82px;
     position: absolute;
-    right   : 150px;
+    right: 150px;
 }
 
 .seta path {
-    stroke           : white;
-    fill             : transparent;
-    stroke-width     : 3px;
-    animation        : seta 2s infinite;
+    stroke: white;
+    fill: transparent;
+    stroke-width: 3px;
+    animation: seta 2s infinite;
     -webkit-animation: seta 2s infinite;
 }
 
@@ -148,12 +155,12 @@ main {
 }
 
 .seta path.a1 {
-    animation-delay        : -1s;
+    animation-delay: -1s;
     -webkit-animation-delay: -1s;
 }
 
 .seta path.a2 {
-    animation-delay        : -.5s;
+    animation-delay: -.5s;
     -webkit-animation-delay: -.5s;
 }
 
@@ -162,60 +169,62 @@ main {
 }
 
 .cards {
-    display  : flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
 .cards div {
-    align-self      : center;
-    min-width       : 300px;
-    min-height      : 300px;
-    max-width       : 300px;
-    max-height      : 300px;
-    margin          : 10px;
-    border-radius   : 20px;
+    align-self: center;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+    border-radius: 20px;
     background-color: rgba(245, 245, 245, 0.788);
-    box-shadow      : 10px 10px 2px rgb(140, 85, 190);
-    transition      : 0.3s;
+    box-shadow: 10px 10px 2px rgb(140, 85, 190);
+    transition: 0.3s;
 }
 
 .cards div:hover {
-    transform : scale(1.1);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
 @media (max-width: 960px) {
-    header{
+    header {
         justify-content: center;
         transition: 0.3s;
     }
-    .menu{
+
+    .menu {
         padding-inline-start: 0;
     }
+
     .foto {
         margin-top: 80px;
-        width     : 180px;
+        width: 180px;
     }
 
     .apresentacao {
         flex-wrap: wrap;
-        padding  : 0px 10px;
+        padding: 0px 10px;
     }
 
     .saudacao {
-        display  : flex;
+        display: flex;
         flex-wrap: wrap;
-        padding  : 20px 20px 190px 30px;
+        padding: 20px 20px 190px 30px;
 
     }
 
     .seta {
         text-align: center;
-        right     : 10%;
+        right: 10%;
     }
 
     .portifolio {
-        height: 110vh;
+        height: 100vh;
     }
 
     .cards {
@@ -223,34 +232,41 @@ main {
     }
 
     .cards div {
-        min-width : 200px;
+        min-width: 200px;
         min-height: 200px;
-        max-width : 200px;
+        max-width: 200px;
         max-height: 200px;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 440px) {
     .waves-divider svg {
         height: 100px;
         margin-bottom: -10px;
     }
+
     .saudacao {
-        padding  : 0px 20px 170px 30px;
+        padding: 0px 20px 170px 30px;
         font-size: 1.2em;
     }
+
+    .portifolio {
+        padding-top: 20px;
+    }
+
     .cards div {
-        min-width : 200px;
+        min-width: 200px;
         min-height: 150px;
-        max-width : 200px;
+        max-width: 200px;
         max-height: 150px;
     }
+
 }
 
 .cards button {
-    border          : none;
-    border-radius   : 20px;
-    padding         : 10px 20px;
-    color           : white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
     background-color: black;
 }
